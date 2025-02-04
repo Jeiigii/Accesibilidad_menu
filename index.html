@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Accesibilidad</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="menu" aria-label="Menu Principal">
+            <ul class="barra">
+                <li class="barraLi"><a href="#">Home</a></li>
+                <li class="barraLi" aria-haspopup="true">
+                    <a href="#" class="submenu-toggle" aria-expanded="false" >Contacto</a>
+                    <ul class="submenu" aria-label="Menu secundario de contacto">
+                        <li class="submenuLi"><a href="#">Telefono</a></li>
+                        <li class="submenuLi"><a href="#">Email</a></li>
+                        <li class="submenuLi"><a href="#">Discord</a></li>
+                    </ul>
+                </li>
+                <li class="barraLi"><a href="#">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Bebas Neue", sans-serif;
+    
+    background-color: black;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+.barra{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.barraLi{
+    list-style: none;
+   position: relative;
+
+}
+.barraLi a{
+    color: white;
+    transition: background 0.3s, color 0.3s;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+}
+.barraLi:hover,:focus{
+    background-color: #444;
+    border-radius: 5px;
+    outline: 1px solid #fff;
+
+}
+.submenu{
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(50, 50, 50, 0.9);
+    display: none;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.sumbmenuLi{
+    padding: 10px;
+}
+.sumbmenuLi a{
+    color: white;
+    transition: background 0.3s;
+    display: block;
+    padding: 20px 8px;
+    text-decoration: none;
+}
+.barraLi:hover .submenu,
+.barraLi:focus-within .submenu{
+    display: block;
+}
+
+.sumbmenuLi:hover,:focus{
+    background-color: rgb(180, 151, 89);
+    border-radius: 5px;
+}
